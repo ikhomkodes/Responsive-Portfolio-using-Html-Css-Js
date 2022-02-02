@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 142; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -182,7 +182,7 @@ img{
 @media screen  and (max-width: 767px) {
     .nav__menu{
         position: fixed;
-        bottom: 0;
+        bottom: -100%;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
@@ -211,10 +211,27 @@ img{
     color: var(--first-color);
 }
 
+.nav__icon{
+    font-size: 1.2rem;
+}
 
+.nav__close{
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+.nav__close:hover{
+    color: var(--first-color-alt);
+}
 
 /* show menu */
-
+.show-menu{
+    bottom: 0;
+}
 
 /* Active link */
 
@@ -223,7 +240,39 @@ img{
 
 
 /*==================== HOME ====================*/
+.home__container{
+    gap: 1rem;
+}
 
+.home__content{
+    grid-template-columns: .5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.home__social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home__social-icon{
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
+
+.home__social-icon:hover{
+    color: var(--first-color);
+}
+
+.home__blob{
+    width: 280px;
+    fill: var(--first-color);
+}
+
+.home__blob-img{
+    width: 200px;
+}
 
 /*==================== BUTTONS ====================*/
 
