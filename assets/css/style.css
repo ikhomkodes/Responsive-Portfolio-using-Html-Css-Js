@@ -568,6 +568,10 @@ img{
     transform: translate(6px, -7px);
 }
 
+.qualification [data-content]{
+    display: none;
+}
+
 /*==================== SERVICES ====================*/
 
 
